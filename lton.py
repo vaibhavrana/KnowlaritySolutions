@@ -35,21 +35,22 @@ def decodenum(num):
              
     while rem>0:
 
-
+        q = rem//decodechar(char)
         rem = rem%decodechar(char)
-               
 
-        if rem<num and rem>=0:
-            result+=char
+        if rem<num:
 
-    
+            i=0
+            while i<q:
+                result+=char
+                i+=1
+
         char = chr(ord(char)-1)
 
-        
     print result
+
+
+
+        
         
 
-
-
-
-    

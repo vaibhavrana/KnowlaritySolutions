@@ -46,7 +46,7 @@ def decodenum(num):
                 i+=1
 
         char = chr(ord(char)-1)
-
+    
     print result
 
 
